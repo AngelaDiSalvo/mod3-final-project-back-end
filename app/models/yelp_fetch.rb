@@ -1,0 +1,2 @@
+class YelpFetch < ApplicationRecord
+end
