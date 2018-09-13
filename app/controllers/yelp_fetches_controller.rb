@@ -35,7 +35,7 @@ class YelpFetchesController < ApplicationController
   private
 
   def yelp_fetches_params
-    params.require(:yelpfetch).permit(:location, :search_term)
+    params.require(:yelp_fetch).permit(:location, :search_term)
   end
 
 

@@ -5,6 +5,7 @@ class CreateSpotifyFetches < ActiveRecord::Migration[5.2]
       t.string :artist_name
       t.string :song_name
       t.string :url
+      t.belongs_to :yelp_fetch, index: true
 
       t.timestamps
     end

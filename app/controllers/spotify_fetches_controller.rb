@@ -23,7 +23,8 @@ class SpotifyFetchesController < ApplicationController
   end
 
   def authorization
-    byebug
+    # byebug
+    params[:code]
   end
 
   private
