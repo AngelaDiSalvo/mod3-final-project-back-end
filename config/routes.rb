@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :yelp_fetches, only: [:index, :show, :create]
   post '/yelp_fetches/search', to: 'yelp_fetches#search'
   get '/authorization', to: 'spotify_fetches#authorization'
+  get '/spotify_fetches', to: 'spotify_fetches#caught_access_token'
 end
