@@ -19,9 +19,15 @@ ActiveRecord::Schema.define(version: 2018_09_12_210805) do
     t.string "business_name"
     t.string "artist_name"
     t.string "song_name"
-    t.string "url"
+    t.string "full_url"
+    t.string "prev_url"
+    t.string "album_cover"
+    t.string "album_cover_sm"
+    t.string "album_name"
+    t.bigint "yelp_fetch_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["yelp_fetch_id"], name: "index_spotify_fetches_on_yelp_fetch_id"
   end
 
   create_table "yelp_fetches", force: :cascade do |t|

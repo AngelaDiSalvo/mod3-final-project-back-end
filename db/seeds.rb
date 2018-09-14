@@ -6,10 +6,5 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-5.times do
-  YelpFetch.create(location: "Houston", search_term: Faker::Food.dish)
-end
 
-5.times do
-  YelpFetch.create(location: "Los Angeles", search_term: Faker::Food.dish)
-end
+  YelpFetch.create(location: "Houston", search_term: "pizza")
